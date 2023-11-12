@@ -9,8 +9,10 @@ export default defineConfig({
       federation({
         name: 'host-app',
         remotes: {
-          layoutMfe: "http://localhost:5001/assets/remoteEntry.js",
-          authMfe: "http://localhost:5002/assets/remoteEntry.js",
+          // layoutMfe: "http://localhost:5001/assets/remoteEntry.js",
+          // authMfe: "http://localhost:5002/assets/remoteEntry.js",
+          layoutMfe: "https://ecom-layout-mfe.vercel.app/assets/remoteEntry.js",
+          authMfe: "https://ecom-auth-mfe.vercel.app/assets/remoteEntry.js",
         },
         shared: ['react','react-dom']
       })
